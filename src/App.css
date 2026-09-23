@@ -1,0 +1,267 @@
+.facebook-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px 16px;
+  background: #f0f2f5;
+}
+
+.facebook-post {
+  width: min(100%, 680px);
+  background: #ffffff;
+  border: 1px solid #dadde1;
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px 10px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1877f2, #4ea5ff);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.profile-meta h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1c1e21;
+}
+
+.profile-meta span {
+  font-size: 0.75rem;
+  color: #65676b;
+}
+
+.post-menu {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #65676b;
+  cursor: pointer;
+}
+
+.post-body {
+  padding: 0 18px 10px;
+}
+
+.post-body p {
+  margin: 0 0 14px;
+  color: #1c1e21;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.post-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 18px;
+  border-top: 1px solid #f0f2f5;
+  border-bottom: 1px solid #f0f2f5;
+  font-size: 0.82rem;
+  color: #65676b;
+}
+
+.post-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px 12px;
+}
+
+.action-btn {
+  border: none;
+  background: transparent;
+  color: #65676b;
+  padding: 10px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #f2f3f5;
+}
+
+.comments-section {
+  padding: 10px 18px 18px;
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e4e6eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #1c1e21;
+  flex-shrink: 0;
+}
+
+.comment-avatar.small {
+  width: 26px;
+  height: 26px;
+  font-size: 0.7rem;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-bubble {
+  background: #f0f2f5;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.comment-bubble strong {
+  color: #1c1e21;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.82rem;
+}
+
+.comment-bubble p {
+  margin: 0;
+  color: #1c1e21;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+  padding-left: 8px;
+}
+
+.comment-actions button,
+.reply-like {
+  border: none;
+  background: transparent;
+  color: #65676b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-replies {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+
+.reply-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.reply-bubble {
+  max-width: 100%;
+}
+
+.comment-form {
+  margin-top: 16px;
+  background: #f0f2f5;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.comment-textarea {
+  width: 100%;
+  border: 1px solid #dddfe2;
+  border-radius: 10px;
+  resize: vertical;
+  min-height: 80px;
+  padding: 10px 12px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.comment-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.comment-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-btn.primary {
+  background: #1877f2;
+  color: white;
+}
+
+.comment-btn.secondary {
+  background: #e4e6eb;
+  color: #1c1e21;
+}
+
+@media (max-width: 620px) {
+  .facebook-post {
+    border-radius: 0;
+  }
+
+  .post-header,
+  .post-body,
+  .post-stats,
+  .comments-section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .post-actions {
+    grid-template-columns: 1fr;
+  }
+}
